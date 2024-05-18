@@ -1,5 +1,5 @@
-function myFn(a) {
-  return a;
+const myObject = {
+x: 10,
+y:2
 }
-console.log();
-console.log(5);
+console.log(Object. keys (myObject))
