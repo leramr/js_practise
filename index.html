@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <form action="#" method="get" enctype="multipart/form-data">
+      <div>
+        <p>name</p>
+        <input type="text" name="username" id="" tabindex="1" />
+      </div>
+
+      <div>
+        <p>password</p>
+        <input type="password" name="password" id="" tabindex="2" />
+      </div>
+
+      <div>
+        <p>telephone</p>
+        <input type="tel" name="tel" id="" tabindex="3" />
+      </div>
+
+      <div>
+        <p>gender</p>
+        <div>
+          <input
+            checked
+            type="radio"
+            name="gender-female"
+            id=""
+            tabindex="4"
+          />female
+        </div>
+        <div>
+          <input type="radio" name="gender-male" id="" tabindex="4" />male
+        </div>
+      </div>
+
+      <div>
+        <p>property</p>
+        <div>
+          <input checked type="checkbox" name="property-bike" id=""  value="yes" tabindex="5"/>bike
+        </div>
+        <div>
+          <input type="checkbox" name="property-car" id="" value="yes" tabindex="6"/>car
+        </div>
+        <div>
+          <input disabled type="checkbox" name="property-flat" id="" value="yes" tabindex="7" />flat
+        </div>
+      </div>
+
+      <div>
+        <p>additional information</p>
+        <textarea name="add-inform" id="" tabindex="8"></textarea>
+      </div>
+
+      <div>
+        <p>attach photo</p>
+        <input type="file" name="attach-photo" id="" tabindex="9">
+      </div>
+
+      <div>
+        <p>favourite color</p>
+        <select name="color" id="" tabindex="10">
+          <option value="black">black</option>
+          <option selected value="red">red</option>
+          <option value="blue">blue</option>
+        </select>
+      </div>
+
+      <div>
+        <p>action</p>
+        <button type="submit" tabindex="11">send</button>
+        <button type="reset" tabindex="12">reset</button>
+      </div>
+    </form>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
