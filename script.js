@@ -1,5 +1,13 @@
-const btn = document.querySelector(".btn");
-function click (event){
-    console.log (event)
+const div = document.querySelector(".div");
+
+const option ={
+    'capture' : false,
+    'once' : true,
+    'passive':false
 }
-btn.addEventListener("click", click );
+
+function show() {
+  console.log("yes");
+}
+
+div.addEventListener("click", show, option )
