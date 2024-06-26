@@ -1,3 +1,24 @@
-.purple {
-  color: purple;
+.div{
+/* display: flex;
+align-items: center;
+justify-content: center; */
+/* flex-direction: column; */
+
+width: 40px;
+  background-color: purple;
+}
+
+.btn-1{
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid pink;
+  border-radius: 2px;
+}
+.btn-2{
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid pink;
+  border-radius: 2px;
 }
