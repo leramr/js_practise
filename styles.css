@@ -1,18 +1,23 @@
-.div{
-/* display: flex;
-align-items: center;
-justify-content: center; */
-/* flex-direction: column; */
-
-width: 40px;
-  background-color: purple;
+.nav{
+  display: inline-block;
 }
 
-.btn{
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: 1px solid pink;
-  border-radius: 2px;
+.nav.-active .ul{
+  display: block;
 }
 
+.nav.-active .btn span:first-child{
+display: none;
+}
+
+.nav.-active .btn span:last-child{
+  display: block;
+  }
+
+.btn span:first-child{
+display: block;
+}
+
+.btn span:last-child{
+  display: none;
+  }

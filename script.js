@@ -1,13 +1,12 @@
-const div = document.querySelector(".div");
+const nav = document.querySelector('.nav')
 
-const option ={
-    'capture' : false,
-    'once' : true,
-    'passive':false
+document.addEventListener('click', menu)
+
+function menu (event){
+if (event.target.closest('.btn')){
+    nav.classList.toggle('-active')
 }
-
-function show() {
-  console.log("yes");
+if (!event.target.closest('.btn')){
+    nav.classList.remove('-active')
 }
-
-div.addEventListener("click", show, option )
+}
