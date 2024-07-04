@@ -1,23 +1,25 @@
-.nav{
-  display: inline-block;
+.div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 200px;
+  background: purple;
 }
 
-.nav.-active .ul{
-  display: block;
-}
-
-.nav.-active .btn span:first-child{
-display: none;
-}
-
-.nav.-active .btn span:last-child{
-  display: block;
-  }
-
-.btn span:first-child{
+.num{
+  text-align: center;
+width: 55px;
+height: 55px;
 display: block;
+  font-size: 23px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
-.btn span:last-child{
-  display: none;
-  }
+.num:hover{
+  background-color: aliceblue;
+}

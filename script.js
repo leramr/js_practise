@@ -1,12 +1,10 @@
-const nav = document.querySelector('.nav')
+const textArea = document.querySelector(".text");
+const max = textArea.getAttribute("maxlength");
+const textCounter = document.querySelector(".text-counter");
+textCounter.innerHTML = max;
 
-document.addEventListener('click', menu)
-
-function menu (event){
-if (event.target.closest('.btn')){
-    nav.classList.toggle('-active')
-}
-if (!event.target.closest('.btn')){
-    nav.classList.remove('-active')
-}
+textArea.addEventListener("keyup", setSymb);
+function setSymb() {
+  const result = max - textArea.value.length;
+  textCounter.innerHTML = result;
 }
