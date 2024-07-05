@@ -1,5 +1,8 @@
-const form = document.forms.form;
-const select = form.select;
+const form = document.forms.form
+const input = form.text
 
-let newOption = new Option ('kkk', 'k', false, false)
-select.prepend(newOption)
+input.addEventListener('blur', function (event){
+    form.submit()
+})
+
+
