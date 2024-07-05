@@ -1,6 +1,20 @@
-const form = document.forms.form
-const textarea = form.text
-console.log (textarea.form)
+const form = document.forms.form;
+
+const checkbox = form.checkbox;
+
+checkbox[2].value = 'save'
+checkbox[2].checked  = true 
+checkbox[0].value = 'save'
+checkbox[0].checked  = true 
+checkbox[2].value = 'blue'
+console.log (checkbox[2].value)
+
+
+
+
+
+
+
 
 
 
@@ -26,7 +40,6 @@ console.log (textarea.form)
 // `<form name="some" class="some">
 //      <input type="text" id="example" name="example">
 //    </form>`
-
 
 // const textArea = document.querySelector(".text");
 // const max = textArea.getAttribute("maxlength");
