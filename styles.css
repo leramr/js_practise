@@ -1,31 +1,3 @@
 .container{
-  background-color: #212121;
-  width: 600px;
-height: 200px;
-}
-
-.parent{
-  position: relative;
-  background-color: purple;
-  width: 400px;
-  height: 150px;
-}
-
-.parent-span{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  color: aliceblue;
-}
-
-.child{
-  background-color: grey;
-  width: 200px;
-  height: 100px;
-}
-
-.inner-child{
-  background-color: aliceblue;
-  width: 100px;
-  height: 50px;
+  border: 1px solid tomato;
 }
