@@ -1,22 +1,24 @@
-const container = document.querySelector('.container')
-const btn = document.querySelectorAll('.btn')
+const container = document.querySelector(".container");
+const selectedTags = new Set();
 
-container.addEventListener('click', onClick)
+container.addEventListener("click", onClick);
 
-function onClick(e){
-    if (e.target.nodeName !== 'BUTTON'){
-        return
-    }
+function onClick(e) {
+//   if (e.target.nodeName !== "BUTTON") {
+//     return;
+//   }
+//   e.target.classList.toggle("active");
+//   console.log(e.target);
 
-    const currentActiveBtn = document.querySelector('.active')
+  const tag = e.target.textContent;
+  const isActive = e.target.classList.contains('active')
 
-    console.log (currentActiveBtn)
-    if (currentActiveBtn){
-        currentActiveBtn.classList.remove('active')
-    }
+  if (isActive){
+    selectedTags.delete(tag)
+  }else{
+    selectedTags.add(tag)
+  }
+  e.target.classList.toggle('active')
+  console.log(selectedTags);
 
-    const nexrActiveBtn = e.target
-    nexrActiveBtn.classList.add('active')
 }
-
-
