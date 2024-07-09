@@ -1,3 +1,16 @@
 .container{
   border: 1px solid tomato;
 }
+
+.btn{
+  background-color: transparent;
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.active{
+  background-color: purple;
+  color: aliceblue;
+}
