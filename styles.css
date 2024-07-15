@@ -1,0 +1,13 @@
+.img.appear{
+  opacity: 1;
+  transition: all 2s linear ;
+}
+
+.img{
+opacity: 0;
+
+}
+
+.list {
+  list-style: none;
+}
