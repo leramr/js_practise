@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["refs","form","document","forms","console","log"],"mappings":"AAAA,MAAMA,IAAI,GAAE;EACRC,IAAI,EAAGC,QAAQ,CAACC,KAAK,CAACF;AAC1B,CAAC;AACDG,OAAO,CAACC,GAAG,CAAEL,IAAI,CAACC,IAAI,CAAC","file":"src.e31bb0bc.js","sourceRoot":"../src","sourcesContent":["const refs ={\n    form : document.forms.form\n}\nconsole.log (refs.form)\n"]}
