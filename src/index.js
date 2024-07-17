@@ -1,37 +1,45 @@
-// import { throttle } from "lodash.throttle";
-import Joi from "joi"
+// import throttle from 'lodash.throttle';
 
+// const refs = {
+//   form: document.querySelector('.feedback-form'),
+//   textarea: document.querySelector('.textarea')
+// };
 
+// const STORAGE_MESSAGE = 'feedback-message';
 
+// populatedTextarea();
 
-const refs ={
-    form : document.querySelector('.feedback-form'),
-    textarea : document.querySelector('.textarea')
-}
+// refs.form.addEventListener('submit', onFormSubmit);
+// refs.textarea.addEventListener('input', throttle(onTextareaInput, 1000));
 
-const STORAGE_MESSAGE = 'feedback-message'
-populatedTextarea()
+// function onFormSubmit(e) {
+//   e.preventDefault();
+//   console.log('send');
+//   e.target.reset();
+//   localStorage.removeItem(STORAGE_MESSAGE);
+// }
 
-refs.form.addEventListener('submit', onFormSubmit)
-refs.textarea.addEventListener('input', throttle(onTextareaInput, 1000))
+// function onTextareaInput(e) {
+//   const message = e.target.value;
+//   localStorage.setItem(STORAGE_MESSAGE, message);
+// }
 
-function onFormSubmit(e){
-e.preventDefault ()
-console.log ('send')
-e.target.reset()
-localStorage.removeItem(STORAGE_MESSAGE)
-}
+// function populatedTextarea() {
+//   const savedMessage = localStorage.getItem(STORAGE_MESSAGE);
+//   if (savedMessage) {
+//     console.log(savedMessage);
+//     refs.textarea.value = savedMessage;
+//   }
+// }
 
-function onTextareaInput(e){
-    const message = e.target.value
-    localStorage.setItem(STORAGE_MESSAGE, message)
-}
+import Handlebars from "handlebars";
+import pokemonCard from './src'
 
-function populatedTextarea(){
-const savedMessage = localStorage.getItem(STORAGE_MESSAGE)
-if (savedMessage){
-    console.log (savedMessage)
-    refs.textarea.value=savedMessage
-}
-}
-
+fetch ('https://pokeapi.co/api/v2/pokemon/2')
+.then (res => {
+   return res.json()
+})
+.then(pokemon =>{
+  console.log (pokemon)
+})
+.catch (error => console.log(error))
