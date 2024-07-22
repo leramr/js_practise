@@ -32,14 +32,15 @@
 //   }
 // }
 
-import Handlebars from "handlebars";
-import pokemonCard from './src'
+// import cardPokemon from "./card-pokemon.hbs";
 
-fetch ('https://pokeapi.co/api/v2/pokemon/2')
-.then (res => {
-   return res.json()
-})
-.then(pokemon =>{
-  console.log (pokemon)
-})
-.catch (error => console.log(error))
+// fetch("https://pokeapi.co/api/v2/pokemon/2")
+//   .then((res) => res.json())
+//   .then((pokemon) => {
+//     console.log(pokemon);
+//     const markUp = cardPokemon(pokemon);
+//     console.log(markUp);
+//     document.getElementById('pokemon-card-container').innerHTML = markUp;
+//   })
+//   .catch((error) => console.log(error));
+

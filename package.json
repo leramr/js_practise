@@ -4,20 +4,22 @@
   "main": "app.js",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "server" : "json-server --watch db.json -p 4040"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "express": "^4.19.2",
-    "handlebars": "^4.7.8",
-    "joi": "^17.13.3",
-    "lodash.throttle": "^4.1.1"
-  },
   "devDependencies": {
+    "json-server": "^1.0.0-beta.1",
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "ca": "^0.1.9",
+    "handlebars": "^4.7.8",
+    "lodash.throttle": "^4.1.1",
+    "parcel-plugin-handlebars": "^0.4.4"
   }
 }
