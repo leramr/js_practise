@@ -1,12 +1,31 @@
-import paintingList from '../painting.json'
-import Paintings from './Painting'
+import React, { Component } from 'react';
 
+class Counter extends Component {
+  state = {
+    value: 5
+  };
 
-export  default function App (){
-    const painting = paintingList[1]
-    return <div><Paintings 
-        title = {painting.title}
-        author = {painting.author}
-        price = {painting.price} />
-    </div>
-} 
+  handleIncrement = () => {
+    this.setState((prevState) => ({
+      value: prevState.value + 1
+    }));
+  };
+
+  handleDecrement = () => {
+    this.setState((prevState) => ({
+      value: prevState.value - 1
+    }));
+  };
+
+  render() {
+    return (
+      <div>
+        <p>{this.state.value}</p>
+        <button type='button' onClick={this.handleIncrement}>+</button>
+        <button type='button' onClick={this.handleDecrement}>-</button>
+      </div>
+    );
+  }
+}
+
+export default Counter;
