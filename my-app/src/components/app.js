@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Value from './value'
 
 class Counter extends Component {
   state = {
@@ -21,8 +22,9 @@ class Counter extends Component {
     return (
       <div>
         <p>{this.state.value}</p>
-        <button type='button' onClick={this.handleIncrement}>+</button>
-        <button type='button' onClick={this.handleDecrement}>-</button>
+            <Value 
+            onIncrem = {this.handleIncrement}
+            onDecrem = {this.handleDecrement}/>
       </div>
     );
   }
