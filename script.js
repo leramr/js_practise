@@ -1,19 +1,11 @@
-const input = document.querySelector('.input')
-const btnPlusOne = document.querySelector('.btn-one')
-const btnPlusTwo = document.querySelector('.btn-two')
-let count = 0
+const container = document.querySelector('.container')
 
-
-input.value=0
-handleChangeOne=(e)=>{
-    count+=1
-    input.value = count
+mouseOver=(e)=>{
+    container.style.backgroundColor = 'blue'
 }
-btnPlusOne.addEventListener('click', handleChangeOne)
+container.addEventListener('mouseover', mouseOver)
 
-handleChangeTwo=(e)=>{
-    count+=2
-    input.value = count
-    input.style.fontSize = "35px"
+mouseOver=(e)=>{
+    container.style.backgroundColor = 'pink'
 }
-btnPlusTwo.addEventListener('click', handleChangeTwo)
+container.addEventListener('mouseout', mouseOver)
