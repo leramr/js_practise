@@ -1,15 +1,19 @@
-const openBtn = document.querySelector('.btn-open')
-const btnClose = document.querySelector('.btn-close')
-const menu = document.querySelector('.dropdown-menu')
+const input = document.querySelector('.input')
+const btnPlusOne = document.querySelector('.btn-one')
+const btnPlusTwo = document.querySelector('.btn-two')
+let count = 0
 
 
-openDropdown=(e)=>{
-    menu.style.display = 'block';
+input.value=0
+handleChangeOne=(e)=>{
+    count+=1
+    input.value = count
 }
-openBtn.addEventListener('click', openDropdown )
+btnPlusOne.addEventListener('click', handleChangeOne)
 
-
-closeDropdown=(e)=>{
-    menu.style.display="none"
+handleChangeTwo=(e)=>{
+    count+=2
+    input.value = count
+    input.style.fontSize = "35px"
 }
-btnClose.addEventListener('click', closeDropdown)
+btnPlusTwo.addEventListener('click', handleChangeTwo)

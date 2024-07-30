@@ -1,10 +1,12 @@
 body{
     font-size: 35px;
 }
-.btn-open, .btn-close{
+.btn-one, .btn-two{
     font-size: 35px;
 }
 
-.dropdown-menu{
-    display: none;
+.input{
+    width: 400px;
+    height: 60px;
+    margin-bottom: 30px;
 }
