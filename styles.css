@@ -1,0 +1,10 @@
+body{
+    font-size: 35px;
+}
+.btn-open, .btn-close{
+    font-size: 35px;
+}
+
+.dropdown-menu{
+    display: none;
+}
